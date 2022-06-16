@@ -1,0 +1,192 @@
+body{
+
+    background-color: yellow;
+    width: 100%;
+    height: 700px;
+}
+
+.listhead{
+    transform: translateX(35%);
+}
+
+.box1
+{
+
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    animation-name: item1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    transition: 0.4s;
+    
+}
+@keyframes item1 {
+    from{
+        transform: skew(30deg);
+    }
+    to{
+        transform: skew(-30deg);
+    }
+    
+}
+
+
+.box2
+{
+
+    width: 100px;
+    height: 100px;
+    background-color:cadetblue;
+    margin: 20px;
+    display: inline-block;
+    animation-name: item2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes item2 {
+    from{
+        transform: skewY(30deg);
+    }
+    to{
+        transform: skewY(-30deg);
+
+    }
+    
+}
+
+.box3
+{
+
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px;
+    display: inline-block;
+    animation-name: item3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes item3 {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.box4
+{
+
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px;
+    display: inline-block;
+}
+
+#sqr1{
+background-color: darkcyan;
+animation-name: sqre1;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes sqre1 {
+    from{
+        transform: scaleY(0.5);
+    }
+    to{
+        transform: scaleY(1);
+    }
+    
+}
+#sqr2{
+
+background-color: darkred;
+animation-name: sqre2;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes sqre2 {
+    from{
+        transform: scalex(1);
+    }
+    to{
+        transform: scalex(0.5);
+    }
+    
+}
+
+
+#sqr3{
+
+background-color: aqua;
+animation-name: sqre3;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes sqre3 {
+    from{
+        transform: rotate(5deg);
+    }
+    to{
+        transform: rotate(-90deg);
+    }
+    
+}
+
+
+.hint{
+    transform: translateX(35%);
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+}
+
+
+/* styles for page2 */
+
+
+.listhead2{
+    transform: translateX(35%);
+}
+
+
+.box{
+
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    margin: 20px;
+    transition: 1s;
+}
+
+.box:hover{
+
+    width: 300px;
+}
+#special{
+
+
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    margin: 20px;
+    transition: 1s;
+}
+#special:hover{
+    width: 250px;
+    height: 250px;
+}
