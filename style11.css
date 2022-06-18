@@ -1,0 +1,179 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    border: 10px solid black;
+    min-height: 100vh;
+}
+
+.bgimg{
+
+    width: 100%;
+    height: 600px;
+    background-image: url(sky.jpg);
+    position: relative;
+
+}
+
+.navbar{
+
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 10px;
+    display: grid;
+    grid-template-columns: 130px 310px 85px;
+    grid-gap: 10px;
+    grid-column: auto;
+    
+    justify-content: center;
+}
+
+.slogan{
+    background-color: #fff;
+    font-size:40px;
+}
+#title1{
+    background-color: orangered;
+}
+#title2{
+    background-color: white;
+}
+#title3{
+    background-color: green;
+}
+
+
+.cityimg{
+
+    width: 500%;
+    height: 250px;
+    background-image: url(city.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+   
+    animation-name: city;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+      
+
+}
+@keyframes city {
+  
+    100%{
+        transform: translateX(-35%);
+
+    }
+}
+
+
+
+.sunimg{
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    right: 100px;
+    animation: sun 10s linear infinite;
+}
+@keyframes sun {
+    100%{
+        transform:translateX(-100px);
+    }
+}
+
+.roadimg{
+
+    width: 500%;
+    height: 200px;
+    background-image: url(road.jpg);
+    z-index: 1;
+    position: absolute;
+    top: 450px;
+    animation-name: road;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes road {
+    100%{
+        transform: translateX(-2300px);
+    }
+    
+}
+
+
+
+.carimg{
+
+    
+    
+    width: 450px;
+    height: 180px;
+    position: absolute;
+    z-index: 1;
+    top: 350px;
+    left: 380px;
+    animation: car 0.09s linear infinite;
+}
+@keyframes car {
+    100%{
+        transform: translateY(-6px);
+    }
+}
+
+
+.wheel1{
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 2;
+    top: 450px;
+    left: 420px;
+    animation:wheely 0.009s linear infinite;
+}
+.wheel2{
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 2;
+    top: 450px;
+    left: 695px;
+    animation:wheely 0.009s linear infinite;
+}
+@keyframes wheely {
+    
+    100%{
+        transform: rotate(-360deg);
+        
+    }
+
+}
+
+
+
+.flagimg{
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 338px;
+    left: 720px;
+    animation: flag 0.09s linear infinite;
+}
+@keyframes flag {
+    100%{
+        transform: translateY(-8px);
+    }
+}
